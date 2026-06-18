@@ -1,0 +1,252 @@
+﻿<Window x:Class="kurs.Reviews"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Отзывы"
+        WindowState="Maximized"
+        Background="#ECECEC">
+
+    <Window.Resources>
+
+        <Style x:Key="MenuButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+
+    </Window.Resources>
+
+    <Viewbox Stretch="Uniform">
+
+        <Canvas Width="1440"
+                Height="1024">
+
+            <!-- Шапка -->
+
+            <Border Width="1440"
+                    Height="115"
+                    Background="#F2F2F2"
+                    Canvas.Left="0"
+                    Canvas.Top="0"/>
+
+            <Image Source="Images/logo.png"
+                   Width="72"
+                   Height="46"
+                   Canvas.Left="80"
+                   Canvas.Top="35"/>
+
+            <TextBlock Text="МУСУБИ"
+                       FontSize="26"
+                       FontFamily="Times New Roman"
+                       Canvas.Left="165"
+                       Canvas.Top="42"/>
+
+            <!-- Меню -->
+
+            <Button Content="Главная"
+                    Style="{StaticResource MenuButtonStyle}"
+                    Canvas.Left="760"
+                    Canvas.Top="45"
+                    Click="MainButton_Click"/>
+
+            <Button Content="Каталог"
+                    Style="{StaticResource MenuButtonStyle}"
+                    Canvas.Left="870"
+                    Canvas.Top="45"
+                    Click="CatalogButton_Click"/>
+
+            <Button Content="Услуги"
+                    Style="{StaticResource MenuButtonStyle}"
+                    Canvas.Left="980"
+                    Canvas.Top="45"
+                    Click="ServicesButton_Click"/>
+
+            <Button Content="Отзывы"
+                    Style="{StaticResource MenuButtonStyle}"
+                    Canvas.Left="1090"
+                    Canvas.Top="45"
+                    Click="ReviewsButton_Click"/>
+
+            <Button Content="О нас"
+                    Style="{StaticResource MenuButtonStyle}"
+                    Canvas.Left="1200"
+                    Canvas.Top="45"
+                    Click="AboutButton_Click"/>
+
+            <!-- Профиль -->
+
+            <Button Width="50"
+                    Height="50"
+                    Background="Transparent"
+                    BorderThickness="0"
+                    Canvas.Left="1305"
+                    Canvas.Top="32"
+                    Click="ProfileButton_Click">
+
+                <Image Source="Images/user.png"
+                       Width="40"
+                       Height="40"/>
+
+            </Button>
+
+            <!-- Заголовок -->
+
+            <TextBlock Text="Отзывы"
+                       FontSize="58"
+                       FontFamily="Times New Roman"
+                       Canvas.Left="80"
+                       Canvas.Top="180"/>
+
+            <!-- Левая стрелка -->
+
+            <Button Content="❮"
+                    Width="60"
+                    Height="60"
+                    FontSize="36"
+                    Background="Transparent"
+                    BorderThickness="0"
+                    Canvas.Left="60"
+                    Canvas.Top="550"/>
+
+            <!-- Правая стрелка -->
+
+            <Button Content="❯"
+                    Width="60"
+                    Height="60"
+                    FontSize="36"
+                    Background="Transparent"
+                    BorderThickness="0"
+                    Canvas.Left="1320"
+                    Canvas.Top="550"/>
+
+            <!-- ОТЗЫВ 1 -->
+
+            <Ellipse Width="170"
+                     Height="170"
+                     Canvas.Left="220"
+                     Canvas.Top="370">
+
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Images/review1.png"/>
+                </Ellipse.Fill>
+
+            </Ellipse>
+
+            <TextBlock Text="Анна К."
+                       FontSize="28"
+                       Canvas.Left="255"
+                       Canvas.Top="560"/>
+
+            <TextBlock Text="Платье, 24.08.2025"
+                       FontSize="16"
+                       Foreground="Gray"
+                       Canvas.Left="215"
+                       Canvas.Top="600"/>
+
+            <TextBlock Text="★★★★★"
+                       FontSize="32"
+                       Canvas.Left="210"
+                       Canvas.Top="630"/>
+
+            <TextBlock Text="Бла бла бла балабала бла бла балабал&#10;лабалала"
+                       Width="260"
+                       TextAlignment="Center"
+                       FontSize="16"
+                       Canvas.Left="175"
+                       Canvas.Top="680"/>
+
+            <TextBlock Text="Читать далее..."
+                       FontSize="16"
+                       FontStyle="Italic"
+                       Canvas.Left="240"
+                       Canvas.Top="730"/>
+
+            <!-- ОТЗЫВ 2 -->
+
+            <Ellipse Width="170"
+                     Height="170"
+                     Canvas.Left="640"
+                     Canvas.Top="370">
+
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Images/review2.png"/>
+                </Ellipse.Fill>
+
+            </Ellipse>
+
+            <TextBlock Text="Анастасия С."
+                       FontSize="28"
+                       Canvas.Left="635"
+                       Canvas.Top="560"/>
+
+            <TextBlock Text="Юбка, 23.08.2025"
+                       FontSize="16"
+                       Foreground="Gray"
+                       Canvas.Left="650"
+                       Canvas.Top="600"/>
+
+            <TextBlock Text="★★★★★"
+                       FontSize="32"
+                       Canvas.Left="630"
+                       Canvas.Top="630"/>
+
+            <TextBlock Text="Бла бла бла балабала бла бла балабал&#10;лабалала"
+                       Width="260"
+                       TextAlignment="Center"
+                       FontSize="16"
+                       Canvas.Left="595"
+                       Canvas.Top="680"/>
+
+            <TextBlock Text="Читать далее..."
+                       FontSize="16"
+                       FontStyle="Italic"
+                       Canvas.Left="660"
+                       Canvas.Top="730"/>
+
+            <!-- ОТЗЫВ 3 -->
+
+            <Ellipse Width="170"
+                     Height="170"
+                     Canvas.Left="1050"
+                     Canvas.Top="370">
+
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Images/review3.png"/>
+                </Ellipse.Fill>
+
+            </Ellipse>
+
+            <TextBlock Text="Александра Л."
+                       FontSize="28"
+                       Canvas.Left="1035"
+                       Canvas.Top="560"/>
+
+            <TextBlock Text="Кардиган, 21.08.2025"
+                       FontSize="16"
+                       Foreground="Gray"
+                       Canvas.Left="1040"
+                       Canvas.Top="600"/>
+
+            <TextBlock Text="★★★★★"
+                       FontSize="32"
+                       Canvas.Left="1040"
+                       Canvas.Top="630"/>
+
+            <TextBlock Text="Бла бла бла балабала бла бла балабал&#10;лабалала"
+                       Width="260"
+                       TextAlignment="Center"
+                       FontSize="16"
+                       Canvas.Left="1000"
+                       Canvas.Top="680"/>
+
+            <TextBlock Text="Читать далее..."
+                       FontSize="16"
+                       FontStyle="Italic"
+                       Canvas.Left="1080"
+                       Canvas.Top="730"/>
+
+        </Canvas>
+
+    </Viewbox>
+
+</Window>

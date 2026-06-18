@@ -1,0 +1,220 @@
+﻿<Window x:Class="kurs.AboutUs"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="О нас"
+        WindowState="Maximized"
+        Background="#ECECEC">
+
+    <Window.Resources>
+
+        <Style x:Key="MenuButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+
+    </Window.Resources>
+
+    <Viewbox Stretch="Uniform">
+
+        <Canvas Width="1440"
+                Height="1024">
+
+            <!-- Шапка -->
+
+            <Border Width="1440"
+                    Height="115"
+                    Background="#F2F2F2"
+                    Canvas.Left="0"
+                    Canvas.Top="0"/>
+
+            <Image Source="Images/logo.png"
+                   Width="72"
+                   Height="46"
+                   Canvas.Left="80"
+                   Canvas.Top="35"/>
+
+            <TextBlock Text="МУСУБИ"
+                       FontSize="26"
+                       FontFamily="Times New Roman"
+                       Canvas.Left="165"
+                       Canvas.Top="42"/>
+
+            <!-- Меню -->
+
+            <Button Content="Главная"
+                    Style="{StaticResource MenuButtonStyle}"
+                    Canvas.Left="760"
+                    Canvas.Top="45"
+                    Click="MainButton_Click"/>
+
+            <Button Content="Каталог"
+                    Style="{StaticResource MenuButtonStyle}"
+                    Canvas.Left="870"
+                    Canvas.Top="45"
+                    Click="CatalogButton_Click"/>
+
+            <Button Content="Услуги"
+                    Style="{StaticResource MenuButtonStyle}"
+                    Canvas.Left="980"
+                    Canvas.Top="45"
+                    Click="ServicesButton_Click"/>
+
+            <Button Content="Отзывы"
+                    Style="{StaticResource MenuButtonStyle}"
+                    Canvas.Left="1090"
+                    Canvas.Top="45"
+                    Click="ReviewsButton_Click"/>
+
+            <Button Content="О нас"
+                    Style="{StaticResource MenuButtonStyle}"
+                    Canvas.Left="1200"
+                    Canvas.Top="45"
+                    Click="AboutButton_Click"/>
+
+            <!-- Профиль -->
+
+            <Button Width="50"
+                    Height="50"
+                    Background="Transparent"
+                    BorderThickness="0"
+                    Canvas.Left="1305"
+                    Canvas.Top="32"
+                    Click="ProfileButton_Click">
+
+                <Image Source="Images/user.png"
+                       Width="40"
+                       Height="40"/>
+
+            </Button>
+
+            <!-- Заголовок -->
+
+            <TextBlock Text="О нас"
+                       FontSize="58"
+                       FontFamily="Times New Roman"
+                       Canvas.Left="80"
+                       Canvas.Top="180"/>
+
+            <!-- Текст -->
+
+            <TextBlock Width="620"
+                       TextWrapping="Wrap"
+                       FontSize="18"
+                       Foreground="#222222"
+                       Canvas.Left="80"
+                       Canvas.Top="460">
+
+                «Мусуби» — премиальное ателье, где высокое портновское искусство
+                встречается с современной эстетикой. Бренд специализируется на
+                эксклюзивном пошиве женской одежды, создавая безупречные силуэты:
+                от элегантных вечерних платьев до изысканных костюмов и дизайнерской
+                верхней одежды.
+
+            </TextBlock>
+
+            <!-- Фото -->
+
+            <Border Width="490"
+                    Height="635"
+                    Canvas.Left="900"
+                    Canvas.Top="160">
+
+                <Image Source="Images/about.png"
+                       Stretch="Fill"/>
+
+            </Border>
+
+            <!-- Футер -->
+
+            <Border Width="1440"
+                    Height="180"
+                    Background="#444444"
+                    Canvas.Left="0"
+                    Canvas.Top="844"/>
+
+            <!-- Лого футер -->
+
+            <Image Source="Images/logo_white.png"
+                   Width="72"
+                   Height="46"
+                   Canvas.Left="80"
+                   Canvas.Top="890"/>
+
+            <TextBlock Text="МУСУБИ"
+                       Foreground="White"
+                       FontSize="26"
+                       FontFamily="Times New Roman"
+                       Canvas.Left="160"
+                       Canvas.Top="898"/>
+
+            <!-- Адрес -->
+
+            <TextBlock Text="Адрес"
+                       Foreground="White"
+                       FontSize="18"
+                       Canvas.Left="385"
+                       Canvas.Top="885"/>
+
+            <TextBlock Text="Санкт-Петербург, Невский проспект,&#10;д. 48, лит. А"
+                       Foreground="White"
+                       FontSize="14"
+                       Canvas.Left="385"
+                       Canvas.Top="915"/>
+
+            <!-- Часы работы -->
+
+            <TextBlock Text="Часы работы"
+                       Foreground="White"
+                       FontSize="18"
+                       Canvas.Left="750"
+                       Canvas.Top="885"/>
+
+            <TextBlock Text="Пн–Вс 10:00–20:00"
+                       Foreground="White"
+                       FontSize="14"
+                       Canvas.Left="750"
+                       Canvas.Top="915"/>
+
+            <!-- Контакты -->
+
+            <TextBlock Text="Контакты"
+                       Foreground="White"
+                       FontSize="18"
+                       Canvas.Left="1015"
+                       Canvas.Top="885"/>
+
+            <TextBlock Text="musubi@gmail.com&#10;+7 888 777 66 55"
+                       Foreground="White"
+                       FontSize="14"
+                       Canvas.Left="1015"
+                       Canvas.Top="915"/>
+
+            <!-- Соцсети -->
+
+            <Image Source="Images/vk.png"
+                   Width="35"
+                   Height="35"
+                   Canvas.Left="1260"
+                   Canvas.Top="905"/>
+
+            <Image Source="Images/tg.png"
+                   Width="35"
+                   Height="35"
+                   Canvas.Left="1320"
+                   Canvas.Top="905"/>
+
+            <!-- Копирайт -->
+
+            <TextBlock Text="© MUSUBI 2026"
+                       Foreground="White"
+                       FontSize="16"
+                       Canvas.Left="650"
+                       Canvas.Top="985"/>
+
+        </Canvas>
+
+    </Viewbox>
+
+</Window>
