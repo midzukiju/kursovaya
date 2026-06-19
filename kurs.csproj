@@ -10,18 +10,27 @@
 
   <ItemGroup>
     <None Remove="Images\about.png" />
+    <None Remove="Images\blouse.png" />
+    <None Remove="Images\dress.png" />
+    <None Remove="Images\item1.png" />
+    <None Remove="Images\item2.png" />
+    <None Remove="Images\item3.png" />
     <None Remove="Images\logo.png" />
     <None Remove="Images\logo_white.png" />
     <None Remove="Images\model1.png" />
     <None Remove="Images\model2.png" />
     <None Remove="Images\model3.png" />
     <None Remove="Images\model4.png" />
+    <None Remove="Images\pants.png" />
     <None Remove="Images\review1.png" />
     <None Remove="Images\review2.png" />
     <None Remove="Images\review3.png" />
+    <None Remove="Images\sarafan.png" />
+    <None Remove="Images\search.png" />
     <None Remove="Images\service1.png" />
     <None Remove="Images\service2.png" />
     <None Remove="Images\service3.png" />
+    <None Remove="Images\shorts.png" />
     <None Remove="Images\tg.png" />
     <None Remove="Images\user.png" />
     <None Remove="Images\vk.png" />
@@ -29,18 +38,27 @@
 
   <ItemGroup>
     <Resource Include="Images\about.png" />
+    <Resource Include="Images\blouse.png" />
+    <Resource Include="Images\dress.png" />
+    <Resource Include="Images\item1.png" />
+    <Resource Include="Images\item2.png" />
+    <Resource Include="Images\item3.png" />
     <Resource Include="Images\logo.png" />
     <Resource Include="Images\logo_white.png" />
     <Resource Include="Images\model1.png" />
     <Resource Include="Images\model2.png" />
     <Resource Include="Images\model3.png" />
     <Resource Include="Images\model4.png" />
+    <Resource Include="Images\pants.png" />
     <Resource Include="Images\review1.png" />
     <Resource Include="Images\review2.png" />
     <Resource Include="Images\review3.png" />
+    <Resource Include="Images\sarafan.png" />
+    <Resource Include="Images\search.png" />
     <Resource Include="Images\service1.png" />
     <Resource Include="Images\service2.png" />
     <Resource Include="Images\service3.png" />
+    <Resource Include="Images\shorts.png" />
     <Resource Include="Images\tg.png" />
     <Resource Include="Images\user.png" />
     <Resource Include="Images\vk.png" />

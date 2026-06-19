@@ -64,5 +64,11 @@ namespace kurs
             this.Close();
         }
 
+        private void RequestButton_Click(object sender, RoutedEventArgs e)
+        {
+            RequestWindow requestWindow = new RequestWindow();
+            requestWindow.Show();
+            this.Close();
+        }
     }
 }

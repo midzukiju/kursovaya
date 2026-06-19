@@ -133,12 +133,17 @@
                        Canvas.Left="114"
                        Canvas.Top="695"/>
 
-            <TextBlock Text="Записаться →"
-                       FontSize="20"
-                       TextDecorations="Underline"
-                       Cursor="Hand"
-                       Canvas.Left="114"
-                       Canvas.Top="790"/>
+            <Button Content="Записаться →"
+                Width="170"
+                Height="45"
+                FontSize="18"
+                Background="#4A4A4A"
+                Foreground="White"
+                BorderThickness="0"
+                Cursor="Hand"
+                Canvas.Left="114"
+                Canvas.Top="780"
+                Click="RequestButton_Click"/>
 
             <!-- Карточка 2 -->
 
@@ -167,12 +172,17 @@
                        Canvas.Left="546"
                        Canvas.Top="695"/>
 
-            <TextBlock Text="Записаться →"
-                       FontSize="20"
-                       TextDecorations="Underline"
-                       Cursor="Hand"
-                       Canvas.Left="546"
-                       Canvas.Top="790"/>
+            <Button Content="Записаться →"
+                Width="170"
+                Height="45"
+                FontSize="18"
+                Background="#4A4A4A"
+                Foreground="White"
+                BorderThickness="0"
+                Cursor="Hand"
+                Canvas.Left="546"
+                Canvas.Top="780"
+                Click="RequestButton_Click"/>
 
             <!-- Карточка 3 -->
 
@@ -201,12 +211,17 @@
                        Canvas.Left="978"
                        Canvas.Top="695"/>
 
-            <TextBlock Text="Записаться →"
-                       FontSize="20"
-                       TextDecorations="Underline"
-                       Cursor="Hand"
-                       Canvas.Left="978"
-                       Canvas.Top="790"/>
+            <Button Content="Записаться →"
+                Width="170"
+                Height="45"
+                FontSize="18"
+                Background="#4A4A4A"
+                Foreground="White"
+                BorderThickness="0"
+                Cursor="Hand"
+                Canvas.Left="978"
+                Canvas.Top="780"
+                Click="RequestButton_Click"/>
 
         </Canvas>
 

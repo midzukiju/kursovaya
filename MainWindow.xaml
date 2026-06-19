@@ -204,7 +204,7 @@
                                 Margin="0,0,60,0"
                                 Foreground="White"
                                 Background="#4A4A4A"
-                                BorderThickness="0"/>
+                                BorderThickness="0" Click="Button_Click"/>
 
                         <Button Content="Переделка одежды"
                                 Width="435"
@@ -212,7 +212,7 @@
                                 FontSize="24"
                                 Foreground="White"
                                 Background="#4A4A4A"
-                                BorderThickness="0"/>
+                                BorderThickness="0" Click="Button_Click_1"/>
 
                     </StackPanel>
 

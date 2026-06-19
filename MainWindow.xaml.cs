@@ -63,8 +63,22 @@ namespace kurs
         private void ProfileButton_Click(object sender, RoutedEventArgs e)
         {
             // Открытие окна авторизации/профиля
-            Profile profile = new Profile();
-            profile.Show();
+            Registration registration = new Registration();
+            registration.Show();
+            this.Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            RequestWindow requestWindow = new RequestWindow();
+            requestWindow.Show();
+            this.Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            RequestWindow requestWindow = new RequestWindow();
+            requestWindow.Show();
             this.Close();
         }
     }

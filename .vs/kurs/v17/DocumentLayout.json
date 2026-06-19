@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\misha\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\\u0441\u002B\u002B\\kurs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|c:\\users\\misha\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\\u0441\u002B\u002B\\kurs\\service.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|solutionrelative:service.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|c:\\users\\misha\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\\u0441\u002B\u002B\\kurs\\catalog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|solutionrelative:catalog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|c:\\users\\misha\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\\u0441\u002B\u002B\\kurs\\service.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|solutionrelative:service.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|c:\\users\\misha\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\\u0441\u002B\u002B\\kurs\\registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|solutionrelative:registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|c:\\users\\misha\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\\u0441\u002B\u002B\\kurs\\entrance.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|solutionrelative:entrance.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Service.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\misha\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\\u0441\u002B\u002B\\kurs\\Service.xaml.cs",
-              "RelativeDocumentMoniker": "Service.xaml.cs",
-              "ToolTip": "C:\\Users\\misha\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\\u0441\u002B\u002B\\kurs\\Service.xaml.cs",
-              "RelativeToolTip": "Service.xaml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Entrance.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\misha\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\\u0441\u002B\u002B\\kurs\\Entrance.xaml.cs",
+              "RelativeDocumentMoniker": "Entrance.xaml.cs",
+              "ToolTip": "C:\\Users\\misha\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\\u0441\u002B\u002B\\kurs\\Entrance.xaml.cs",
+              "RelativeToolTip": "Entrance.xaml.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowFUAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T18:49:12.246Z"
+              "WhenOpened": "2026-06-19T19:50:00.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Registration.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\misha\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\\u0441\u002B\u002B\\kurs\\Registration.xaml.cs",
+              "RelativeDocumentMoniker": "Registration.xaml.cs",
+              "ToolTip": "C:\\Users\\misha\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\\u0441\u002B\u002B\\kurs\\Registration.xaml.cs",
+              "RelativeToolTip": "Registration.xaml.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowE8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T19:49:55.079Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Service.xaml",
-              "DocumentMoniker": "C:\\Users\\misha\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\\u0441\u002B\u002B\\kurs\\Service.xaml",
-              "RelativeDocumentMoniker": "Service.xaml",
-              "ToolTip": "C:\\Users\\misha\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\\u0441\u002B\u002B\\kurs\\Service.xaml",
-              "RelativeToolTip": "Service.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-06-16T19:26:49.145Z",
+              "Title": "Catalog.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\misha\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\\u0441\u002B\u002B\\kurs\\Catalog.xaml.cs",
+              "RelativeDocumentMoniker": "Catalog.xaml.cs",
+              "ToolTip": "C:\\Users\\misha\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\\u0441\u002B\u002B\\kurs\\Catalog.xaml.cs",
+              "RelativeToolTip": "Catalog.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T19:47:15.926Z",
               "EditorCaption": ""
             }
           ]
