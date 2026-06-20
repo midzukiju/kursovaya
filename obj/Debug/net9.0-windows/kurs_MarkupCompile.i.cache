@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\misha\OneDrive\Документы\с++\kurs\obj\Debug\net9.0-windows\
+C:\Users\user\Desktop\Новая папка\kursovaya\obj\Debug\net9.0-windows\
 kurs
 none
 false
-TRACE;DEBUG;NET;NET9_0;NETCOREAPP
-C:\Users\misha\OneDrive\Документы\с++\kurs\App.xaml
+TRACE;DEBUG;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+C:\Users\user\Desktop\Новая папка\kursovaya\App.xaml
 112476463
 
-16225663131
-200161758370
+351196131340
+214720636879
 AboutUs.xaml;Administrator.xaml;Catalog.xaml;Entrance.xaml;MainWindow.xaml;ProductDetails.xaml;Profile.xaml;Registration.xaml;RequestWindow.xaml;Reviews.xaml;Service.xaml;
 
 False

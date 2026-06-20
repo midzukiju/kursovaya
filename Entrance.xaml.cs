@@ -64,19 +64,37 @@ namespace kurs
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            string login = LoginBox.Text;
+            string login = LoginBox.Text.Trim();
             string password = PasswordBox.Password;
 
             if (string.IsNullOrWhiteSpace(login) ||
                 string.IsNullOrWhiteSpace(password))
             {
-                MessageBox.Show("Заполните все поля");
+                MessageBox.Show("Заполните все поля", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-            Profile profile = new Profile();
-            profile.Show();
-            this.Close();
+            // Проверка администратора
+            if (login == "admin" && password == "admin")
+            {
+                MessageBox.Show("Добро пожаловать, администратор!", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                // Открываем главное окно (MainWindow)
+                Administrator mainWindow = new Administrator();
+                mainWindow.Show();
+                this.Close();
+            }
+            else
+            {
+                // Для обычных пользователей (если нужна проверка по БД)
+                // Пока просто показываем ошибку
+                MessageBox.Show("Неверный логин или пароль!\n\nДля входа как администратор используйте:\nЛогин: admin\nПароль: admin",
+                    "Ошибка входа", MessageBoxButton.OK, MessageBoxImage.Error);
+
+                // Очищаем поле пароля
+                PasswordBox.Clear();
+                PasswordBox.Focus();
+            }
         }
 
         private void RegistrationButton_Click(object sender, RoutedEventArgs e)

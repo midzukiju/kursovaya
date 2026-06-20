@@ -5,8 +5,140 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:kurs"
         mc:Ignorable="d"
-        Title="Administrator" Height="450" Width="800">
-    <Grid>
-        
+        Title="Панель администратора" Height="600" Width="1000"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <TabControl>
+            <!-- Вкладка Клиенты -->
+            <TabItem Header="Клиенты">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Кнопки управления -->
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <Button Content="Обновить" Width="100" Height="30" Margin="0,0,5,0" Click="BtnRefreshClients_Click"/>
+                        <Button Content="Добавить" Width="100" Height="30" Margin="0,0,5,0" Click="BtnAddClient_Click"/>
+                        <Button Content="Редактировать" Width="100" Height="30" Margin="0,0,5,0" Click="BtnEditClient_Click"/>
+                        <Button Content="Удалить" Width="100" Height="30" Click="BtnDeleteClient_Click"/>
+                    </StackPanel>
+
+                    <!-- Таблица клиентов -->
+                    <DataGrid x:Name="DgClients" Grid.Row="1" 
+                              AutoGenerateColumns="False"
+                              IsReadOnly="True" 
+                              CanUserAddRows="False" 
+                              SelectionMode="Single" 
+                              SelectionUnit="FullRow">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Код" Binding="{Binding Код}" Width="50"/>
+                            <DataGridTextColumn Header="Фамилия" Binding="{Binding Фамилия}" Width="150"/>
+                            <DataGridTextColumn Header="Имя" Binding="{Binding Имя}" Width="150"/>
+                            <DataGridTextColumn Header="Отчество" Binding="{Binding Отчество}" Width="150"/>
+                            <DataGridTextColumn Header="Телефон" Binding="{Binding Телефон}" Width="120"/>
+                            <DataGridTextColumn Header="Почта" Binding="{Binding Почта}" Width="200"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <!-- Вкладка Сотрудники -->
+            <TabItem Header="Сотрудники">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <Button Content="Обновить" Width="100" Height="30" Margin="0,0,5,0" Click="BtnRefreshEmployees_Click"/>
+                        <Button Content="Добавить" Width="100" Height="30" Margin="0,0,5,0" Click="BtnAddEmployee_Click"/>
+                        <Button Content="Редактировать" Width="100" Height="30" Margin="0,0,5,0" Click="BtnEditEmployee_Click"/>
+                        <Button Content="Удалить" Width="100" Height="30" Click="BtnDeleteEmployee_Click"/>
+                    </StackPanel>
+
+                    <DataGrid x:Name="DgEmployees" Grid.Row="1" 
+                              AutoGenerateColumns="False"
+                              IsReadOnly="True" 
+                              CanUserAddRows="False"
+                              SelectionMode="Single" 
+                              SelectionUnit="FullRow">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Код" Binding="{Binding Код}" Width="50"/>
+                            <DataGridTextColumn Header="Фамилия" Binding="{Binding Фамилия}" Width="150"/>
+                            <DataGridTextColumn Header="Имя" Binding="{Binding Имя}" Width="150"/>
+                            <DataGridTextColumn Header="Отчество" Binding="{Binding Отчество}" Width="150"/>
+                            <DataGridTextColumn Header="Должность" Binding="{Binding Должность}" Width="150"/>
+                            <DataGridTextColumn Header="Телефон" Binding="{Binding Телефон}" Width="120"/>
+                            <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="200"/>
+                            <DataGridTextColumn Header="Дата приема" Binding="{Binding Дата_приема, StringFormat=\{0:dd.MM.yyyy\}}" Width="100"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <!-- Вкладка Заказы -->
+            <TabItem Header="Заказы">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <Button Content="Обновить" Width="100" Height="30" Margin="0,0,5,0" Click="BtnRefreshOrders_Click"/>
+                    </StackPanel>
+
+                    <DataGrid x:Name="DgOrders" Grid.Row="1" 
+                              AutoGenerateColumns="False"
+                              IsReadOnly="True" 
+                              CanUserAddRows="False"
+                              SelectionMode="Single" 
+                              SelectionUnit="FullRow">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Код" Binding="{Binding Код}" Width="50"/>
+                            <DataGridTextColumn Header="Код клиента" Binding="{Binding Код_клиента}" Width="100"/>
+                            <DataGridTextColumn Header="Код каталога" Binding="{Binding Код_каталога}" Width="100"/>
+                            <DataGridTextColumn Header="Дата начала" Binding="{Binding Дата_начала, StringFormat=\{0:dd.MM.yyyy\}}" Width="100"/>
+                            <DataGridTextColumn Header="Дата выдачи" Binding="{Binding Дата_выдачи, StringFormat=\{0:dd.MM.yyyy\}}" Width="100"/>
+                            <DataGridTextColumn Header="Код срочности" Binding="{Binding Код_срочности}" Width="100"/>
+                            <DataGridTextColumn Header="Стоимость" Binding="{Binding Стоимость, StringFormat=\{0:N2\}}" Width="100"/>
+                            <DataGridTextColumn Header="Аванс" Binding="{Binding Аванс, StringFormat=\{0:N2\}}" Width="100"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <!-- Вкладка Материалы -->
+            <TabItem Header="Материалы">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <Button Content="Обновить" Width="100" Height="30" Margin="0,0,5,0" Click="BtnRefreshMaterials_Click"/>
+                        <Button Content="Добавить" Width="100" Height="30" Margin="0,0,5,0" Click="BtnAddMaterial_Click"/>
+                        <Button Content="Удалить" Width="100" Height="30" Click="BtnDeleteMaterial_Click"/>
+                    </StackPanel>
+
+                    <DataGrid x:Name="DgMaterials" Grid.Row="1" 
+                              AutoGenerateColumns="False"
+                              IsReadOnly="True" 
+                              CanUserAddRows="False"
+                              SelectionMode="Single" 
+                              SelectionUnit="FullRow">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Код" Binding="{Binding Код}" Width="100"/>
+                            <DataGridTextColumn Header="Название" Binding="{Binding Название}" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Button Content="Тест подключения" Click="TestConnection_Click" Width="150" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,10,10"/>
     </Grid>
 </Window>
