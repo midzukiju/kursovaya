@@ -1,16 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using Microsoft.EntityFrameworkCore;
+using kurs.Data;
 
 namespace kurs
 {
@@ -67,11 +62,85 @@ namespace kurs
                 : Visibility.Hidden;
         }
 
-        private void RegisterButton_Click(object sender, RoutedEventArgs e)
+        private async void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
-            Profile profile = new Profile();
-            profile.Show();
-            this.Close();
+            string fullName = NameBox.Text.Trim();
+            string contact = ContactBox.Text.Trim();
+            string password = PasswordBox.Password;
+
+            // Проверка заполнения
+            if (string.IsNullOrWhiteSpace(fullName) ||
+                string.IsNullOrWhiteSpace(contact) ||
+                string.IsNullOrWhiteSpace(password))
+            {
+                MessageBox.Show("Заполните все поля!", "Ошибка",
+                    MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            // Проверка длины пароля
+            if (password.Length < 4)
+            {
+                MessageBox.Show("Пароль должен быть не менее 4 символов!", "Ошибка",
+                    MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            try
+            {
+                using (var db = new AppDbContext())
+                {
+                    // Разделяем полное имя на части
+                    var nameParts = fullName.Split(' ');
+                    string lastName = nameParts.Length > 0 ? nameParts[0] : "";
+                    string firstName = nameParts.Length > 1 ? nameParts[1] : fullName;
+                    string patronymic = nameParts.Length > 2 ? nameParts[2] : "";
+
+                    // Проверяем, существует ли уже такой клиент
+                    var existingClient = await db.Clients
+                        .FirstOrDefaultAsync(c =>
+                            (isPhoneMode && c.Phone == contact) ||
+                            (!isPhoneMode && c.Email == contact));
+
+                    if (existingClient != null)
+                    {
+                        MessageBox.Show("Клиент с таким контактом уже существует!\nВойдите в систему.",
+                            "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                        return;
+                    }
+
+                    // Создаем нового клиента
+                    var newClient = new kurs.Models.Client
+                    {
+                        LastName = lastName,
+                        FirstName = firstName,
+                        Patronymic = patronymic,
+                        Phone = isPhoneMode ? contact : "",
+                        Email = !isPhoneMode ? contact : "",
+                        Password = password  // СОХРАНЯЕМ ПАРОЛЬ
+                    };
+
+                    db.Clients.Add(newClient);
+                    await db.SaveChangesAsync();
+
+                    // Сохраняем данные текущего пользователя
+                    kurs.Helpers.CurrentUser.Login = contact;
+                    kurs.Helpers.CurrentUser.Role = "user";
+
+                    MessageBox.Show("Регистрация успешна! Добро пожаловать!",
+                        "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                    // Переходим в профиль
+                    Profile profile = new Profile();
+                    profile.Show();
+                    this.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка регистрации: {ex.Message}",
+                    "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)

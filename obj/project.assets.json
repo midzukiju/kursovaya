@@ -2832,11 +2832,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\Новая папка\\kursovaya\\kurs.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\kursovaya\\kurs.csproj",
       "projectName": "kurs",
-      "projectPath": "C:\\Users\\user\\Desktop\\Новая папка\\kursovaya\\kurs.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\kursovaya\\kurs.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\Новая папка\\kursovaya\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\kursovaya\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

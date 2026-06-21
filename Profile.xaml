@@ -113,55 +113,117 @@
                        Margin="80,180,0,0"
                        VerticalAlignment="Top"/>
 
+
             <!-- Аватар -->
-
             <Border Width="150"
-                    Height="150"
-                    CornerRadius="75"
-                    BorderBrush="#CFCFCF"
-                    BorderThickness="1"
-                    Margin="120,310,0,0"
-                    HorizontalAlignment="Left"
-                    VerticalAlignment="Top">
+        Height="150"
+        CornerRadius="75"
+        BorderBrush="#CFCFCF"
+        BorderThickness="1"
+        Margin="120,310,0,0"
+        HorizontalAlignment="Left"
+        VerticalAlignment="Top">
 
-                <TextBlock Text="А"
-                           FontSize="64"
-                           HorizontalAlignment="Center"
-                           VerticalAlignment="Center"/>
+                <TextBlock x:Name="AvatarText"
+               Text="А"
+               FontSize="64"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"/>
             </Border>
 
-            <!-- Информация -->
-
-            <StackPanel Margin="350,320,0,0"
-                        HorizontalAlignment="Left"
-                        VerticalAlignment="Top">
+            <!-- Информация (режим просмотра) -->
+            <StackPanel x:Name="ViewPanel"
+            Margin="350,320,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top">
 
                 <TextBlock x:Name="UserNameText"
-                           Text="Анна Иванова"
-                           FontSize="28"/>
+               Text="Имя не загружено"
+               FontSize="28"/>
 
                 <TextBlock x:Name="EmailText"
-                           Text="annaivanova67@gmail.com"
-                           FontSize="18"
-                           Margin="0,15,0,0"/>
+               Text="email@example.com"
+               FontSize="18"
+               Margin="0,15,0,0"/>
 
                 <TextBlock x:Name="PhoneText"
-                           Text="+79008112326"
-                           FontSize="18"/>
+               Text="+70000000000"
+               FontSize="18"/>
             </StackPanel>
 
-            <!-- Редактирование -->
+            <!-- Информация (режим редактирования) - СКРЫТ по умолчанию -->
+            <StackPanel x:Name="EditPanel"
+            Margin="350,320,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Visibility="Collapsed">
 
-            <Button Width="40"
-                    Height="40"
-                    Margin="660,315,0,0"
-                    HorizontalAlignment="Left"
-                    VerticalAlignment="Top"
-                    Click="EditProfile_Click">
+                <TextBox x:Name="UserNameBox"
+             FontSize="28"
+             Width="400"
+             HorizontalAlignment="Left"
+             Padding="5"/>
 
-                <TextBlock Text="✎"
-                           FontSize="24"/>
+                <TextBox x:Name="EmailBox"
+             FontSize="18"
+             Width="400"
+             HorizontalAlignment="Left"
+             Margin="0,15,0,0"
+             Padding="5"/>
+
+                <TextBox x:Name="PhoneBox"
+             FontSize="18"
+             Width="400"
+             HorizontalAlignment="Left"
+             Padding="5"/>
+            </StackPanel>
+
+            <!-- Кнопка Редактировать -->
+            <Button x:Name="EditButton"
+        Width="150"
+        Height="40"
+        Margin="660,315,0,0"
+        HorizontalAlignment="Left"
+        VerticalAlignment="Top"
+        Background="#4A4A4A"
+        Foreground="White"
+        BorderThickness="0"
+        Cursor="Hand"
+        Click="EditProfile_Click">
+
+                <TextBlock Text="✎ Редактировать"
+               FontSize="16"/>
             </Button>
+
+            <!-- Кнопки Сохранить и Отмена (СКРЫТЫ по умолчанию) -->
+            <StackPanel x:Name="ActionButtons"
+            Orientation="Horizontal"
+            Margin="660,315,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Visibility="Collapsed">
+
+                <Button Width="120"
+            Height="40"
+            Background="#27AE60"
+            Foreground="White"
+            BorderThickness="0"
+            Cursor="Hand"
+            Click="SaveButton_Click">
+                    <TextBlock Text="✓ Сохранить" FontSize="16"/>
+                </Button>
+
+                <Button Width="100"
+            Height="40"
+            Margin="10,0,0,0"
+            Background="#E74C3C"
+            Foreground="White"
+            BorderThickness="0"
+            Cursor="Hand"
+            Click="CancelButton_Click">
+                    <TextBlock Text="✕ Отмена" FontSize="16"/>
+                </Button>
+            </StackPanel>
 
             <!-- Избранное -->
 

@@ -1,22 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using Microsoft.EntityFrameworkCore;
+using kurs.Data;
 
 namespace kurs
 {
-    /// <summary>
-    /// Логика взаимодействия для Entrance.xaml
-    /// </summary>
     public partial class Entrance : Window
     {
         private bool isPhoneMode = true;
@@ -62,13 +54,12 @@ namespace kurs
                 : Visibility.Hidden;
         }
 
-        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        private async void LoginButton_Click(object sender, RoutedEventArgs e)
         {
             string login = LoginBox.Text.Trim();
             string password = PasswordBox.Password;
 
-            if (string.IsNullOrWhiteSpace(login) ||
-                string.IsNullOrWhiteSpace(password))
+            if (string.IsNullOrWhiteSpace(login) || string.IsNullOrWhiteSpace(password))
             {
                 MessageBox.Show("Заполните все поля", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
@@ -79,21 +70,53 @@ namespace kurs
             {
                 MessageBox.Show("Добро пожаловать, администратор!", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
 
-                // Открываем главное окно (MainWindow)
-                Administrator mainWindow = new Administrator();
-                mainWindow.Show();
-                this.Close();
-            }
-            else
-            {
-                // Для обычных пользователей (если нужна проверка по БД)
-                // Пока просто показываем ошибку
-                MessageBox.Show("Неверный логин или пароль!\n\nДля входа как администратор используйте:\nЛогин: admin\nПароль: admin",
-                    "Ошибка входа", MessageBoxButton.OK, MessageBoxImage.Error);
+                kurs.Helpers.CurrentUser.Login = login;
+                kurs.Helpers.CurrentUser.Role = "admin";
 
-                // Очищаем поле пароля
-                PasswordBox.Clear();
-                PasswordBox.Focus();
+                Administrator adminWindow = new Administrator();
+                adminWindow.Show();
+                this.Close();
+                return;
+            }
+
+            // Проверка обычного пользователя по БД
+            try
+            {
+                using (var db = new AppDbContext())
+                {
+                    // Ищем клиента по телефону или почте И паролю
+                    var client = await db.Clients
+                        .FirstOrDefaultAsync(c =>
+                            ((isPhoneMode && c.Phone == login) ||
+                             (!isPhoneMode && c.Email == login)) &&
+                            c.Password == password);
+
+                    if (client != null)
+                    {
+                        // Сохраняем данные пользователя
+                        kurs.Helpers.CurrentUser.Login = login;
+                        kurs.Helpers.CurrentUser.Role = "user";
+
+                        MessageBox.Show($"Добро пожаловать, {client.FirstName}!",
+                            "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                        Profile profile = new Profile();
+                        profile.Show();
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Неверный логин или пароль!\n\nДля входа как администратор используйте:\nЛогин: admin\nПароль: admin",
+                            "Ошибка входа", MessageBoxButton.OK, MessageBoxImage.Error);
+
+                        PasswordBox.Clear();
+                        PasswordBox.Focus();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка подключения к БД: {ex.Message}", "Ошибка");
             }
         }
 
