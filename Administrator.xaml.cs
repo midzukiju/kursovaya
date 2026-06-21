@@ -21,7 +21,27 @@ namespace kurs
         }
 
         #region КЛИЕНТЫ
+        private void BtnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            var result = MessageBox.Show("Вы уверены, что хотите выйти?\nВсе несохранённые данные будут потеряны.",
+                "Подтверждение выхода",
+                MessageBoxButton.YesNo,
+                MessageBoxImage.Question);
 
+            if (result == MessageBoxResult.Yes)
+            {
+                // Очищаем данные текущего пользователя
+                kurs.Helpers.CurrentUser.Login = null;
+                kurs.Helpers.CurrentUser.Role = null;
+
+                // Открываем окно входа
+                Entrance entrance = new Entrance();
+                entrance.Show();
+
+                // Закрываем текущее окно
+                this.Close();
+            }
+        }
         private async Task LoadClientsAsync()
         {
             try
@@ -36,7 +56,8 @@ namespace kurs
                             Имя = c.FirstName,
                             Отчество = c.Patronymic,
                             Телефон = c.Phone,
-                            Email = c.Email
+                            Email = c.Email,
+                            Комментарий = c.Comment
                         })
                         .ToListAsync();
 
@@ -63,6 +84,7 @@ namespace kurs
                 string patronymic = Microsoft.VisualBasic.Interaction.InputBox("Введите отчество:", "Добавление клиента", "");
                 string phone = Microsoft.VisualBasic.Interaction.InputBox("Введите телефон:", "Добавление клиента", "");
                 string email = Microsoft.VisualBasic.Interaction.InputBox("Введите email:", "Добавление клиента", "");
+                string comment = Microsoft.VisualBasic.Interaction.InputBox("Введите комментарий:", "Добавление клиента", "");
 
                 if (string.IsNullOrWhiteSpace(lastName) || string.IsNullOrWhiteSpace(firstName))
                 {
@@ -78,7 +100,8 @@ namespace kurs
                         FirstName = firstName.Trim(),
                         Patronymic = string.IsNullOrWhiteSpace(patronymic) ? "" : patronymic.Trim(),
                         Phone = string.IsNullOrWhiteSpace(phone) ? "" : phone.Trim(),
-                        Email = string.IsNullOrWhiteSpace(email) ? "" : email.Trim()
+                        Email = string.IsNullOrWhiteSpace(email) ? "" : email.Trim(),
+                        Comment = string.IsNullOrWhiteSpace(comment) ? "" : comment.Trim()
                     });
                     await db.SaveChangesAsync();
                     MessageBox.Show("Клиент добавлен!", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -90,6 +113,8 @@ namespace kurs
                 MessageBox.Show($"Ошибка: {ex.Message}", "Ошибка");
             }
         }
+
+
 
         private async void BtnDeleteClient_Click(object sender, RoutedEventArgs e)
         {

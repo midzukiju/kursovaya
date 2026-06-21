@@ -3,6 +3,42 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\kursovaya\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|c:\\users\\user\\desktop\\kursovaya\\requestwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|solutionrelative:requestwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|c:\\users\\user\\desktop\\kursovaya\\requestwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|solutionrelative:requestwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|c:\\users\\user\\desktop\\kursovaya\\administrator.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|solutionrelative:administrator.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|c:\\users\\user\\desktop\\kursovaya\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|solutionrelative:models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|c:\\users\\user\\desktop\\kursovaya\\administrator.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|solutionrelative:administrator.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|c:\\users\\user\\desktop\\kursovaya\\reviews.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|solutionrelative:reviews.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|c:\\users\\user\\desktop\\kursovaya\\service.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|solutionrelative:service.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|c:\\users\\user\\desktop\\kursovaya\\registration.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|solutionrelative:registration.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|c:\\users\\user\\desktop\\kursovaya\\entrance.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|solutionrelative:entrance.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|c:\\users\\user\\desktop\\kursovaya\\profile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|solutionrelative:profile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -17,18 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|c:\\users\\user\\desktop\\kursovaya\\registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|solutionrelative:registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|c:\\users\\user\\desktop\\kursovaya\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|solutionrelative:models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|c:\\users\\user\\desktop\\kursovaya\\administrator.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|solutionrelative:administrator.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|c:\\users\\user\\desktop\\kursovaya\\administrator.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|solutionrelative:administrator.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DED79E14-0A44-4D64-9BE0-97B9D297A5D7}|kurs.csproj|c:\\users\\user\\desktop\\kursovaya\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,11 +74,122 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RequestWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\kursovaya\\RequestWindow.xaml.cs",
+              "RelativeDocumentMoniker": "RequestWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\kursovaya\\RequestWindow.xaml.cs",
+              "RelativeToolTip": "RequestWindow.xaml.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAwwGgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-21T16:39:53.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\kursovaya\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "Models\\Client.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\kursovaya\\Models\\Client.cs",
+              "RelativeToolTip": "Models\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvyIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T20:43:55.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RequestWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\kursovaya\\RequestWindow.xaml",
+              "RelativeDocumentMoniker": "RequestWindow.xaml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\kursovaya\\RequestWindow.xaml",
+              "RelativeToolTip": "RequestWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-21T16:11:11.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Administrator.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\kursovaya\\Administrator.xaml.cs",
+              "RelativeDocumentMoniker": "Administrator.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\kursovaya\\Administrator.xaml.cs",
+              "RelativeToolTip": "Administrator.xaml.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAwwHIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T20:02:42.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Reviews.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\kursovaya\\Reviews.xaml",
+              "RelativeDocumentMoniker": "Reviews.xaml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\kursovaya\\Reviews.xaml",
+              "RelativeToolTip": "Reviews.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-21T16:10:59.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Administrator.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\kursovaya\\Administrator.xaml",
+              "RelativeDocumentMoniker": "Administrator.xaml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\kursovaya\\Administrator.xaml",
+              "RelativeToolTip": "Administrator.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-20T20:02:19.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Service.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\kursovaya\\Service.xaml",
+              "RelativeDocumentMoniker": "Service.xaml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\kursovaya\\Service.xaml",
+              "RelativeToolTip": "Service.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-21T16:11:07.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Registration.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\kursovaya\\Registration.xaml",
+              "RelativeDocumentMoniker": "Registration.xaml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\kursovaya\\Registration.xaml",
+              "RelativeToolTip": "Registration.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-21T16:12:34.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Entrance.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\kursovaya\\Entrance.xaml",
+              "RelativeDocumentMoniker": "Entrance.xaml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\kursovaya\\Entrance.xaml",
+              "RelativeToolTip": "Entrance.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-21T16:10:45.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Profile.xaml",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\kursovaya\\Profile.xaml",
               "RelativeDocumentMoniker": "Profile.xaml",
@@ -66,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "Profile.xaml.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\kursovaya\\Profile.xaml.cs",
               "RelativeDocumentMoniker": "Profile.xaml.cs",
@@ -78,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "Entrance.xaml.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\kursovaya\\Entrance.xaml.cs",
               "RelativeDocumentMoniker": "Entrance.xaml.cs",
@@ -90,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "Registration.xaml.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\kursovaya\\Registration.xaml.cs",
               "RelativeDocumentMoniker": "Registration.xaml.cs",
@@ -102,42 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\kursovaya\\Models\\Client.cs",
-              "RelativeDocumentMoniker": "Models\\Client.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\kursovaya\\Models\\Client.cs",
-              "RelativeToolTip": "Models\\Client.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAADwvx8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-20T20:43:55.211Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Administrator.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\kursovaya\\Administrator.xaml.cs",
-              "RelativeDocumentMoniker": "Administrator.xaml.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\kursovaya\\Administrator.xaml.cs",
-              "RelativeToolTip": "Administrator.xaml.cs",
-              "ViewState": "AgIAAM4CAAAAAAAAAADwv/oCAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-20T20:02:42.05Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Administrator.xaml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\kursovaya\\Administrator.xaml",
-              "RelativeDocumentMoniker": "Administrator.xaml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\kursovaya\\Administrator.xaml",
-              "RelativeToolTip": "Administrator.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-06-20T20:02:19.117Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\kursovaya\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
@@ -149,18 +249,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\kursovaya\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
               "ToolTip": "C:\\Users\\user\\Desktop\\kursovaya\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-06-20T20:32:10.787Z"
+              "WhenOpened": "2026-06-20T20:32:10.787Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "kurs.csproj",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\kursovaya\\kurs.csproj",
               "RelativeDocumentMoniker": "kurs.csproj",

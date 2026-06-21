@@ -25,8 +25,11 @@ namespace kurs.Models
         [Column("Почта")]
         public string Email { get; set; } = string.Empty;
 
-        // НОВОЕ ПОЛЕ ДЛЯ ПАРОЛЯ
         [Column("Пароль")]
         public string Password { get; set; } = string.Empty;
+
+        // НОВОЕ ПОЛЕ КОММЕНТАРИЯ
+        [Column("Комментарий")]
+        public string Comment { get; set; } = string.Empty;
     }
 }
